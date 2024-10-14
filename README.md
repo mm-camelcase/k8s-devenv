@@ -3,7 +3,7 @@ A kubnetes development environment
 
 ## Overview
 
-A Kubernetes development environment configured for the workday integration project.
+A Kubernetes development environment ... todo
 
 ![Dev Env](images/devenv.gif)
 
@@ -20,7 +20,7 @@ This environment depends on the following tools
 [Setup instructions here](docs/prerequisites.md)
 
 
-## Workday Cluster Setup
+## Cluster Setup
 
 [Setup instructions here](docs/setup-wd-cluster.md)
 
