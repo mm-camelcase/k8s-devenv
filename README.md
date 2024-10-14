@@ -21,7 +21,7 @@ For detailed setup instructions, refer to [prerequisites.md](docs/prerequisites.
 
 ## Cluster Setup
 
-[Setup instructions here](docs/setup-wd-cluster.md)
+Follow the instructions in [setup-cluster.md](docs/setup-cluster.md) to set up your local Kubernetes cluster.
 
 ## Useful complementary tools
 
