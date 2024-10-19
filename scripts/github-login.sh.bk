@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Switch Docker context to Minikube's Docker
+#eval $(minikube docker-env)
+
+#minikube ssh
+
+# Check if the user is logged in to GitHub Container Registry
+github_logged_in=$(docker info 2>&1 | grep -i 'ghcr.io')
+
+if [[ -n "$github_logged_in" ]]; then
+    echo "You are already logged in to GitHub Container Registry."
+else
+    echo "You are not logged in to GitHub Container Registry. Attempting to login..."
+    echo "Please enter your GitHub username: "
+    read github_username
+    echo "Please enter your GitHub Personal Access Token (with write:packages and read:packages scope): "
+    read -s github_pat
+
+    echo "$github_pat" | docker login ghcr.io -u "$github_username" --password-stdin
+    if [[ $? -eq 0 ]]; then
+        echo "Login successful."
+    else
+        echo "Login failed. Please try again."
+        exit 1
+    fi
+fi
+
+# Switch Docker context back to the default
+#eval $(minikube -p minikube docker-env -u)
+
+#exit

@@ -1,0 +1,45 @@
+image:
+  debug: true
+
+primary:
+  initdb:
+    scripts:
+      00_create_db.sh: |
+        #!/bin/bash
+        echo "Creating database and user"
+        export PGPASSWORD="$POSTGRESQL_PASSWORD"
+        psql -U "$POSTGRESQL_USERNAME" -d "postgres" -c "CREATE DATABASE devenvdb;"
+        psql -U "$POSTGRESQL_USERNAME" -d "postgres" -c "CREATE USER devenv WITH ENCRYPTED PASSWORD 'devenv';"
+        psql -U "$POSTGRESQL_USERNAME" -d "postgres" -c "GRANT ALL PRIVILEGES ON DATABASE devenvdb TO devenv;"
+
+      01_configure_db.sh: |
+        #!/bin/bash
+        echo "Setting up schema permissions for devenv"
+        export PGPASSWORD="$POSTGRESQL_PASSWORD"
+        
+        # Wait to ensure database is ready
+        sleep 10
+
+        # Configure schema permissions for devenv
+        psql -U "$POSTGRESQL_USERNAME" -d "devenvdb" -c "GRANT USAGE ON SCHEMA public TO devenv;"
+        psql -U "$POSTGRESQL_USERNAME" -d "devenvdb" -c "GRANT CREATE ON SCHEMA public TO devenv;"
+        psql -U "$POSTGRESQL_USERNAME" -d "devenvdb" -c "ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL ON TABLES TO devenv;"
+        psql -U "$POSTGRESQL_USERNAME" -d "devenvdb" -c "GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO devenv;"
+
+        echo "Database configuration completed successfully."
+
+
+# initdbScripts:
+#   00_init.sh: |
+#     echo "Setting up devenv db";
+#     psql -U postgres -d postgres -c "CREATE DATABASE DEVENV;"
+#     psql -U postgres -d postgres -c "CREATE USER devenv WITH ENCRYPTED PASSWORD 'devenv';"
+#     psql -U postgres -d postgres -c "GRANT ALL PRIVILEGES ON DATABASE DEVENV TO devenv;"
+#   01_init.sh: |
+#     echo "Setting up schemas and privileges";
+#     psql -U devenv -d workdaypostgres -c "CREATE SCHEMA job_history;"
+#     psql -U devenv -d workdaypostgres -c "CREATE SCHEMA api_users_db;"
+#     psql -U devenv -d workdaypostgres -c "CREATE SCHEMA employee_batch;"
+#     psql -U devenv -d workdaypostgres -c "GRANT ALL PRIVILEGES ON SCHEMA job_history TO devenv;"
+#     psql -U devenv -d workdaypostgres -c "GRANT ALL PRIVILEGES ON SCHEMA api_users_db TO devenv;"
+#     psql -U devenv -d workdaypostgres -c "GRANT ALL PRIVILEGES ON SCHEMA employee_batch TO devenv;"

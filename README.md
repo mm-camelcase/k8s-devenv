@@ -34,4 +34,10 @@ These tools are not required but can enhance your development experience:
 
 For more information on setting up these tools, refer to [optional-tooling.md](docs/optional-tooling.md)
 
+## Notes
+
+- mention scripts are idempotent
+- run devenv.sh again to redeploy orig
+- click and go
+- tool to pretify scripts
 
