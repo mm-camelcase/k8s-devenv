@@ -1,0 +1,34 @@
+layout {
+    default_tab_template {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        children
+        pane size=2 borderless=true {
+            plugin location="zellij:status-bar"
+        }
+    }
+
+    tab name="Devenv (k8s)" focus=true {
+        pane split_direction="vertical" {
+            pane size="62%" cwd="~/workspace/ops/k8s-devenv" name="DEVENV"
+            pane size="38%" name="K9S" start_suspended=true command="k9s" {
+                args "-A"
+            }
+        }
+        pane split_direction="horizontal" size="30%" {
+            pane start_suspended=true name="HELM" command="watch" {
+                args "helm list --all-namespaces"
+            }
+        }
+    }
+
+    tab name="Development" {
+        pane split_direction="horizontal" {
+            pane size="75%" cwd="~/workspace/dev/user-service" name="SERVICE CODE"
+            pane name="K9S" borderless=true command="k9s" {
+                args "-n" "devenv" "--headless" "--logoless"
+            }
+        }
+    }
+}

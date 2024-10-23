@@ -27,7 +27,7 @@ Follow the instructions in [setup-cluster.md](docs/setup-cluster.md) to set up y
 
 These tools are not required but can enhance your development experience:
 
-- [tmux](https://github.com/tmux/tmux/wiki) - Terminal multiplexer for managing multiple terminal windows.
+- [zellij](https://zellij.dev/) - Terminal multiplexer for managing multiple terminal windows.
 - [k9s](https://k9scli.io/) - A terminal-based UI to interact with Kubernetes clusters.
 - [kubectx](https://github.com/ahmetb/kubectx) - A tool to switch between Kubernetes contexts easily.
 - [kubens](https://github.com/ahmetb/kubectx) - A tool to switch between Kubernetes namespaces.

@@ -1,10 +1,10 @@
 # Tools
 
-## Tmux
+## Zellij
 
-Tmux allows you to open multiple windows and tabs within a terminal. These configurations can be scripted to create dashbord type views (see `tmux/k8s_mini.sh` for a script that generated these views...)
+Zellij allows you to open multiple windows and tabs within a terminal. These configurations can be scripted to create dashbord type views (see `resources/zellij/layout.md` for a script that generated these views...)
 
-![Dev Env](../images/devenv.gif)
+![Dev Env](images/zellij.png)
 
 Nice set of videos explaining what tmux is and what it can do [here](https://www.youtube.com/watch?v=gmjyMxezIWU).
 
