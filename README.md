@@ -59,22 +59,19 @@ Resource deployments use helm style Skaffold configs (i.e. Skaffold generates he
 To deploy source code (assuming code is build first i.e. `./gradlew clean build`) into the local cluster run the following command from the same location as the `skaffold.yaml` definition file...
 
 ```shell
-skaffold run
+skaffold run --port-forward
 ```
 
 or Skaffold can monitor your source code for changes using...
 
 ```shell
-skaffold dev
+skaffold dev --port-forward
 ```
 
 
 ### Debugging code
 
-The Skaffold configurations can be leveraged to swap in a devenv specific dockerfile ([example Skaffold config here](https://gitlab.com/workhuman/integrations/utils/email-api-service/-/blob/develop/skaffold.yaml) ).
-This dockerfile ([example Dockerfile here](https://gitlab.com/workhuman/integrations/utils/email-api-service/-/blob/develop/src/main/resources/devenv/Dockerfile_devenv)) has the required options set to enable remote debugging of the target service.
-
-Deploy the debug enabled service to the cluster...
+To deploy a service in debug mode, run...
 
 ```shell
 skaffold debug
