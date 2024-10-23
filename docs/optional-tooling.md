@@ -4,17 +4,20 @@
 
 Zellij allows you to open multiple windows and tabs within a terminal. These configurations can be scripted to create dashbord type views (see `resources/zellij/layout.md` for a script that generated these views...)
 
-![Dev Env](/images/zellij.png)
+Zellij provides the capability to open multiple windows and tabs within a terminal. You can script these configurations to create dashboard-like views. For an example see [layout.md](/resources/zellij/layout.md)
 
-Nice set of videos explaining what tmux is and what it can do [here](https://www.youtube.com/watch?v=gmjyMxezIWU).
+![Zellij Layout](/images/zellij.png)
 
-Follow the installation instructions [here](https://minikube.sigs.k8s.io/docs/start/)
+
+
+Follow the installation instructions [here](https://zellij.dev/)
 
 For Linux
 
 ```shell
-curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
-sudo install minikube-linux-amd64 /usr/local/bin/minikube
+wget https://github.com/zellij-org/zellij/releases/download/v0.40.1/zellij-x86_64-unknown-linux-musl.tar.gz
+tar -xzf zellij-x86_64-unknown-linux-musl.tar.gz
+sudo mv zellij /usr/local/bin/
 ```
 
 ## K9s
