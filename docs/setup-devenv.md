@@ -1,4 +1,4 @@
-# Workday Cluster Setup
+# Development Environment Setup
 
 ## Run the setup script
 
