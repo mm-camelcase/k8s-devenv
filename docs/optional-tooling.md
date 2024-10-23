@@ -20,7 +20,7 @@ sudo mv zellij /usr/local/bin/
 
 ## K9s
 
-![k9s](/images/k9s.jpg)
+![k9s](/images/k9s.png)
 
 Follow the installation instructions [here](https://github.com/derailed/k9s).
 
