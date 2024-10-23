@@ -19,9 +19,9 @@ This environment depends on the following tools, which are essential for running
 For detailed setup instructions, refer to [prerequisites.md](docs/prerequisites.md)
 
 
-## Cluster Setup
+## Devenv Environment Setup
 
-Follow the instructions in [setup-cluster.md](docs/setup-cluster.md) to set up your local Kubernetes cluster.
+Follow the instructions in [setup-devenv.md](docs/setup-devenv.md) to set up your local Kubernetes cluster.
 
 ## Useful complementary tools
 
