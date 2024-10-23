@@ -49,8 +49,8 @@ there is an accompanying port forward kill script if required...
 
 ### UI Access
 
-Home page: [http://127.0.0.1:8080](http://127.0.0.1:8080) 
-API      : [http://localhost:8080/swagger-ui/index.html] (http://127.0.0.1:8080)
+**Home page:** [http://127.0.0.1:8080](http://127.0.0.1:8080)  
+**API      :** [http://localhost:8080/swagger-ui/index.html](http://127.0.0.1:8080)
 
 ### DB Access
 
