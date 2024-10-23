@@ -42,11 +42,3 @@ For Linux
 curl -Lo skaffold https://storage.googleapis.com/skaffold/releases/latest/skaffold-linux-amd64 && \
 sudo install skaffold /usr/local/bin/
 ```
-
-## Localstack
-
-To be able to use localstack, add the following alias to your `~/.bashrc` or `~/.zshrc` depending on your environment:
-
-```shell
-alias awslocal="aws --output text --no-cli-pager --region us-east-1 --endpoint-url=http://localhost:31566"
-```
