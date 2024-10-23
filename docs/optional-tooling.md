@@ -2,8 +2,6 @@
 
 ## Zellij
 
-Zellij allows you to open multiple windows and tabs within a terminal. These configurations can be scripted to create dashbord type views (see `resources/zellij/layout.md` for a script that generated these views...)
-
 Zellij provides the capability to open multiple windows and tabs within a terminal. You can script these configurations to create dashboard-like views. For an example see [layout.md](/resources/zellij/layout.md)
 
 ![Zellij Layout](/images/zellij.png)

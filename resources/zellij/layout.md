@@ -4,9 +4,9 @@ Zellij allows you to open multiple windows and tabs within a terminal. A zellij 
 
 ## Zellij Layouts
 
-The layout used in this tutorial is [here](k8sdevenv.kdl)
+The layout used in this demo : [k8sdevenv.kdl](k8sdevenv.kdl)
 
-![Alt text](images/zellij.jpg "Title")
+![Zellij Layout](/images/zellij.png)
 
 To use this layout save `k8sdevenv.kdl` to `~/.config/zellij/layouts/` and run  
 
