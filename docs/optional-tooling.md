@@ -20,7 +20,7 @@ sudo mv zellij /usr/local/bin/
 
 ## K9s
 
-![k9s](../images/k9s.jpg)
+![k9s](/images/k9s.jpg)
 
 Follow the installation instructions [here](https://github.com/derailed/k9s).
 
@@ -32,9 +32,9 @@ curl -sS https://webinstall.dev/k9s | bash
 
 ## kubectx & kubens
 
-![kubectx](../images/kubectx-demo.gif)
+![kubectx](/images/kubectx-demo.gif)
 
-![kubens](../images/kubens-demo.gif)
+![kubens](/images/kubens-demo.gif)
 
 Follow the installation instructions [here](https://github.com/ahmetb/kubectx).
 
