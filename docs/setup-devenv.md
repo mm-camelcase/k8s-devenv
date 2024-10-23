@@ -12,7 +12,6 @@ The script is performing the following actions
 
 - starting minikube
 - configuring the dev namespace
-- ensuring authentication with AWS
 - login to docker hub
 - adding all required helm repos
 - configuring the local DB
@@ -54,6 +53,6 @@ there is an accompanying port forward kill script if required...
 
 ### DB Access
 
-![Postgresql](../images/pgadmin.jpg)
+![Postgresql](/images/postgres.png)
 
 
