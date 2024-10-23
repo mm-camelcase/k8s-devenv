@@ -21,7 +21,7 @@ For detailed setup instructions, refer to [prerequisites.md](docs/prerequisites.
 
 ## Devenv Environment Setup
 
-Follow the instructions in [setup-devenv.md](docs/setup-devenv.md) to set up your local Kubernetes cluster.
+Follow the instructions in [setup-devenv.md](docs/setup-devenv.md) to set up your local Kubernetes cluster. The deployed services are primarily Spring Boot applications built using Gradle. Note that the provided setup script is idempotent, meaning it can safely be re-run to update services to their latest versions or redeploy the original configuration.
 
 ## Useful complementary tools
 
@@ -40,23 +40,23 @@ For more information on setting up these tools, refer to [optional-tooling.md](d
 
 ![Dev Env](images/k8s-dashboard.png)
 
-Run...
+Run the following command to access the Kubernetes Dashboard:
 
 ```shell
 minikube dashboard
 ```
 
-and go to the provided url.
+Then, navigate to the provided URL.
 
 ### Deploying code
 
-The environment uses **Skaffold** as a tool to package and deploy source code directly into the local k8s cluster. Each project contains a `skaffold.yaml` definition file that tells Skaffold how to handle local deployments
+The environment uses **Skaffold** as a tool to package and deploy source code directly into the local k8s cluster. Each project contains a `skaffold.yaml` definition file that tells Skaffold how to handle local deployments (see example `skaffold.yaml` [here](https://github.com/mm-camelcase/user-service/blob/main/skaffold.yaml))
 
 #### Deploying Pod Resources
 
-Resource deployments use helm style Skaffold configs (i.e. Skaffold generates helm install and update commands).
+Resource deployments use Helm-style Skaffold configs (i.e. Skaffold generates Helm install and update commands).
 
-To deploy source code (assuming code is build first i.e. `./gradlew clean build`) into the local cluster run the following command from the same location as the `skaffold.yaml` definition file...
+To deploy source code (assuming code is build first using `./gradlew clean build`) into the local cluster, run the following command from the same location as the `skaffold.yaml` definition file:
 
 ```shell
 skaffold run --port-forward
@@ -71,25 +71,23 @@ skaffold dev --port-forward
 
 ### Debugging code
 
-To deploy a service in debug mode, run...
+To deploy a service in debug mode, run:
 
 ```shell
 skaffold debug
 ```
 
-The deploy will automatically set up a port foward for debugging on port `5005`
-
-Configure your debugger as a remote JVM debugger (e.g. in IntelliJ)...
+The deploy will automatically set up a port foward for debugging on port `5005`. Configure your debugger as a remote JVM debugger (e.g. in IntelliJ):
 
 ![debugger](images/debugger.jpg)
 
 ### Update the cluster
 
-Run the setup script again to update services to the latest available versions 
+To update services to the latest available versions, simply run the setup script again. Since the script is idempotent, it will redeploy or update without causing conflicts.
 
 ### Delete the cluster
 
-The setup script is idempotent, but if you want to remove all traces of your cluster and start again you can run...
+The setup script is idempotent, but if you want to remove all traces of your cluster and start over, you can run:
 
 ```shell
 minikube delete
