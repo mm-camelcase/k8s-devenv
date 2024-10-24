@@ -2,7 +2,7 @@
 
 A Kubernetes development environment.
 
-<table style="border: none;>
+<table style="border: none;">
   <tr>
     <td>
       <img src="images/devenv.png" alt="Project Thumbnail" width="300"/>
