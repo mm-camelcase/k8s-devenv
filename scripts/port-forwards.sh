@@ -27,4 +27,3 @@ echo -e "${NC}"
 
 printf "Port forwards are running as background processes\n"
 printf "Run ${YELLOW}"$DIR/kill-port-forwards.sh"${NC} to kill them\n\n"
-

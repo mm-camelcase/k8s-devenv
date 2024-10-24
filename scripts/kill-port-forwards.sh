@@ -2,9 +2,8 @@
 
 PROCS_TO_KILL=$(ps -ef | grep 'kubectl port-forward' | grep -v grep)
 
-if [ -z "${PROCS_TO_KILL}" ]
-then
-   exit 0;
+if [ -z "${PROCS_TO_KILL}" ]; then
+	exit 0
 fi
 
 RED='\033[0;31m'
@@ -22,6 +21,3 @@ echo "-----------------------------------------------"
 echo -e "${NC}"
 
 echo "$PROCS_TO_KILL" | awk '{print $2}' | xargs kill
-
-
-

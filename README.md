@@ -109,11 +109,3 @@ To remove all traces of your cluster and start over, you can run:
 minikube delete
 ```
 
-## Notes
-
-- mention scripts are idempotent
-- run devenv.sh again to redeploy orig
-- click and go
-- tool to pretify scripts
-- mention services are spring boot * gradle
-
