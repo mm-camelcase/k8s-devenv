@@ -2,16 +2,9 @@
 
 A Kubernetes development environment.
 
-<table style="border: none; border-collapse: collapse; width: 100%;">
-  <tr>
-    <td>
-      <img src="images/devenv.png" alt="Project Thumbnail" width="300"/>
-    </td>
-    <td>
-      <strong>Click on the image for demo video</strong>
-    </td>
-  </tr>
-</table>
+<img src="images/devenv2.png" alt="Project Thumbnail" width="200"/>
+
+**Click on the image for a demo**
 
 
 
