@@ -2,9 +2,11 @@
 
 A Kubernetes development environment.
 
-<img src="images/devenv2.png" alt="Project Thumbnail" width="200"/>
+<a href="https://example.com">
+    <img src="images/devenv2.png" alt="Project Thumbnail" width="200"/>
+</a>
 
-**Click on the image for a demo**
+**Click image for a [demo](https://example.com)**
 
 
 
