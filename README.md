@@ -12,7 +12,7 @@ A Kubernetes development environment.
 
 ## Overview
 
-A Kubernetes development environment provides a local setup for developing, testing, and debugging Kubernetes-based applications. This guide will help you set up and configure all necessary tools to create an efficient workflow.
+A Kubernetes development environment that provides a local setup for developing, testing, and debugging Kubernetes-based applications. This guide will help you set up and configure all necessary tools to create an efficient workflow.
 
 ## Prerequisites
 
