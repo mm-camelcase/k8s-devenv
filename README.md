@@ -2,6 +2,10 @@
 
 A Kubernetes development environment.
 
+<a href="https://example.com">
+    <img src="images/devenv.png" alt="Project Thumbnail" width="400"/>
+</a>
+
 ## Overview
 
 A Kubernetes development environment provides a local setup for developing, testing, and debugging Kubernetes-based applications. This guide will help you set up and configure all necessary tools to create an efficient workflow.
@@ -20,6 +24,8 @@ For detailed setup instructions, refer to [prerequisites.md](docs/prerequisites.
 
 
 ## Devenv Environment Setup
+
+todo: update this to show cmd and link to details...
 
 Follow the instructions in [setup-devenv.md](docs/setup-devenv.md) to set up your local Kubernetes cluster. The deployed services are primarily Spring Boot applications built using Gradle. Note that the provided setup script is idempotent, meaning it can safely be re-run to update services to their latest versions or redeploy the original configuration.
 
