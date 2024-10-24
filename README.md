@@ -32,7 +32,7 @@ For detailed setup instructions, refer to [prerequisites.md](docs/prerequisites.
 To setup the development environment run:
 
 ```shell
-minikube dashboard
+./devenv.sh
 ```
 
 The deployed services are primarily Spring Boot applications built using Gradle
