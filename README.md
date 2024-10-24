@@ -93,11 +93,11 @@ The deploy will automatically set up a port foward for debugging on port `5005`.
 
 ### Update the cluster
 
-To update services to the latest available versions, simply run the setup script again. Since the script is idempotent, it will redeploy or update without causing conflicts.
+To update services to the latest available versions, simply run the setup script again. Since the script is **idempotent**, it will redeploy or update without causing conflicts.
 
 ### Delete the cluster
 
-The setup script is idempotent, but if you want to remove all traces of your cluster and start over, you can run:
+To remove all traces of your cluster and start over, you can run:
 
 ```shell
 minikube delete
