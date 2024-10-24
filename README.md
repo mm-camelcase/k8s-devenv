@@ -2,21 +2,10 @@
 
 A Kubernetes development environment.
 
-<a href="https://example.com">
-    <img src="images/devenv.png" alt="Project Thumbnail" width="200"/>
-</a>
-
-**Click on the image to watch a short video demonstrating how to set up and use the development environment.**
-
-<div style="display: flex; align-items: center;">
-  <img src="images/devenv.png" alt="Project Thumbnail" width="200" style="margin-right: 20px;"/>
-  <p><strong>Click on the image to watch a short video demonstrating how to set up and use the development environment.</strong></p>
-</div>
-
 <table border="0">
   <tr>
     <td>
-      <img src="images/devenv.png" alt="Project Thumbnail" width="200"/>
+      <img src="images/devenv.png" alt="Project Thumbnail" width="300"/>
     </td>
     <td>
       <strong>Click on the image to watch a short video demonstrating how to set up and use the development environment.</strong>
