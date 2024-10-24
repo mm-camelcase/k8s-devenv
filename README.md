@@ -3,7 +3,7 @@
 A Kubernetes development environment.
 
 <a href="https://example.com">
-    <img src="images/devenv2.png" alt="Project Thumbnail" width="200"/>
+    <img src="images/devenv.png" alt="Project Thumbnail" width="200"/>
 </a>
 
 **Click image for a [demo](https://example.com)**
