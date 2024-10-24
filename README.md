@@ -29,9 +29,15 @@ For detailed setup instructions, refer to [prerequisites.md](docs/prerequisites.
 
 ## Devenv Environment Setup
 
-todo: update this to show cmd and link to details...
+To setup the development environment run:
 
-Follow the instructions in [setup-devenv.md](docs/setup-devenv.md) to set up your local Kubernetes cluster. The deployed services are primarily Spring Boot applications built using Gradle. Note that the provided setup script is idempotent, meaning it can safely be re-run to update services to their latest versions or redeploy the original configuration.
+```shell
+minikube dashboard
+```
+
+The deployed services are primarily Spring Boot applications built using Gradle
+
+For more information on the setup script, see [setup-devenv.md](docs/setup-devenv.md)
 
 ## Useful complementary tools
 
