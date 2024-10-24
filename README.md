@@ -2,13 +2,13 @@
 
 A Kubernetes development environment.
 
-<table border="0">
+<table style="border: none;>
   <tr>
     <td>
       <img src="images/devenv.png" alt="Project Thumbnail" width="300"/>
     </td>
     <td>
-      <strong>Click on the image to watch a short video demonstrating how to set up and use the development environment.</strong>
+      <strong>Click on the image for demo video</strong>
     </td>
   </tr>
 </table>
