@@ -16,6 +16,8 @@ Watch the demo video below:
   Your browser does not support the video tag.
 </video>
 
+![Description of the GIF](vid/k8s_devenv.gif)
+
 
 
 ## Overview

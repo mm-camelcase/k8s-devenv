@@ -1,0 +1,2 @@
+ffmpeg -i k8s_devenv_mini.mp4 -vf "fps=15,scale=1280:-1:flags=lanczos,palettegen" palette.png
+ffmpeg -i k8s_devenv_mini.mp4 -i palette.png -filter_complex "fps=15,scale=1280:-1:flags=lanczos[x];[x][1:v]paletteuse" k8s_devenv.gif
