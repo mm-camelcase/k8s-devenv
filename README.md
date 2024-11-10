@@ -9,6 +9,14 @@ A Kubernetes development environment.
 **Click image for a [demo](https://example.com)**
 
 
+Watch the demo video below:
+
+<video width="640" height="360" controls>
+  <source src="https://mm-camelcase.github.io/site/k8s_devenv_mini.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
 
 ## Overview
 
