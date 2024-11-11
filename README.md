@@ -3,32 +3,10 @@
 A Kubernetes development environment.
 
 <a href="https://mm-camelcase.github.io/site/k8s_devenv_mini.mp4">
-    <img src="images/devenv.png" alt="Project Thumbnail" width="200"/>
+    <img src="assets/images/devenv.png" alt="Project Thumbnail" width="200"/>
 </a>
 
 **Click image for a [demo](https://mm-camelcase.github.io/site/k8s_devenv_mini.mp4)**
-
-
-
-<a href="https://mm-camelcase.github.io/site/k8s_devenv_mini.mp4">
-    <img src="vid/thumbnail_high_res.png" alt="Project Thumbnail" width="200"/>
-</a>
-
-**Click image for a [demo](https://mm-camelcase.github.io/site/k8s_devenv_mini.mp4)**
-
-
-Watch the demo video below:
-
-<video width="640" height="360" controls>
-  <source src="https://mm-camelcase.github.io/site/k8s_devenv_mini.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-![Description of the GIF](vid/k8s_devenv.gif)
-
-
-[![Watch the video](images/devenv.png)](https://mm-camelcase.github.io/site/k8s_devenv_mini.mp4)
-
 
 
 ## Overview
@@ -75,7 +53,7 @@ For more information on setting up these tools, refer to [optional-tooling.md](d
 
 ### Kubernetes Dashboard
 
-![Dev Env](images/k8s-dashboard.png)
+![Dev Env](assets/images/k8s-dashboard.png)
 
 Run the following command to access the Kubernetes Dashboard:
 
@@ -116,7 +94,7 @@ skaffold debug
 
 The deploy will automatically set up a port foward for debugging on port `5005`. Configure your debugger as a remote JVM debugger (e.g. in IntelliJ):
 
-![debugger](images/debugger.jpg)
+![debugger](assets/images/debugger.jpg)
 
 ### Update the cluster
 

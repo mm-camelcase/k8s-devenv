@@ -53,6 +53,6 @@ there is an accompanying port forward kill script if required...
 
 ### DB Access
 
-![Postgresql](/images/postgres.png)
+![Postgresql](/assets/images/postgres.png)
 
 

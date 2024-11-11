@@ -4,7 +4,7 @@
 
 Zellij provides the capability to open multiple windows and tabs within a terminal. You can script these configurations to create dashboard-like views. For an example see [layout.md](/resources/zellij/layout.md)
 
-![Zellij Layout](/images/zellij.png)
+![Zellij Layout](/assets/images/zellij.png)
 
 
 
@@ -20,7 +20,7 @@ sudo mv zellij /usr/local/bin/
 
 ## K9s
 
-![k9s](/images/k9s.png)
+![k9s](/assets/images/k9s.png)
 
 Follow the installation instructions [here](https://github.com/derailed/k9s).
 
@@ -32,9 +32,9 @@ curl -sS https://webinstall.dev/k9s | bash
 
 ## kubectx & kubens
 
-![kubectx](/images/kubectx-demo.gif)
+![kubectx](/assets/images/kubectx-demo.gif)
 
-![kubens](/images/kubens-demo.gif)
+![kubens](/assets/images/kubens-demo.gif)
 
 Follow the installation instructions [here](https://github.com/ahmetb/kubectx).
 
