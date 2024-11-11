@@ -2,11 +2,11 @@
 
 A Kubernetes development environment.
 
-<a href="https://example.com">
+<a href="https://mm-camelcase.github.io/site/k8s_devenv_mini.mp4">
     <img src="images/devenv.png" alt="Project Thumbnail" width="200"/>
 </a>
 
-**Click image for a [demo](https://example.com)**
+**Click image for a [demo](https://mm-camelcase.github.io/site/k8s_devenv_mini.mp4)**
 
 
 Watch the demo video below:
