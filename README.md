@@ -19,6 +19,9 @@ Watch the demo video below:
 ![Description of the GIF](vid/k8s_devenv.gif)
 
 
+[![Watch the video](images/devenv.png)](https://mm-camelcase.github.io/site/k8s_devenv_mini.mp4)
+
+
 
 ## Overview
 
